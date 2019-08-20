@@ -370,7 +370,7 @@ namespace Healthcheck_Plus_2
                                 case "type":
                                     process_type = attribute.Value;
                                     break;
-                                // If 'name' store contents (i.e. the filename)
+                                // If 'name' store contents (i.e. the filename
                                 case "name":
                                     process_name = attribute.Value;
 
