@@ -1,0 +1,27 @@
+﻿<Window x:Name="Window_Config" x:Class="Healthcheck_Plus_2.ConfigForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Healthcheck_Plus_2"
+        mc:Ignorable="d"
+        Title="Config" Height="275" Width="455.018" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Topmost="True" WindowStyle="ToolWindow">
+    <Grid Background="#FF5F70A8">
+        <Button x:Name="Btn_SaveConfig" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="343,206,0,0" Click="Btn_SaveConfig_Click">
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Change the asset directories (this will change the directories for all users)." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" IsEnabled="False" Foreground="White"/>
+        <Label Content="Client data:" HorizontalAlignment="Left" Height="27" Margin="10,41,0,0" VerticalAlignment="Top" Width="76" Foreground="White"/>
+        <Label Content="Cygnus jobs:" HorizontalAlignment="Left" Height="27" Margin="10,90,0,0" VerticalAlignment="Top" Width="76" Foreground="White"/>
+        <Label Content="WFDs:" HorizontalAlignment="Left" Height="27" Margin="10,140,0,0" VerticalAlignment="Top" Width="44" Foreground="White"/>
+        <TextBox x:Name="txt_ClientDataDir" HorizontalAlignment="Left" Height="23" Margin="10,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344" IsEnabled="False"/>
+        <TextBox x:Name="txt_CygnusJobDir" HorizontalAlignment="Left" Height="23" Margin="10,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344" IsEnabled="False"/>
+        <TextBox x:Name="txt_WfdDir" HorizontalAlignment="Left" Height="23" Margin="10,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344" IsEnabled="False"/>
+        <Button x:Name="btn_ClientDataSelect" Content="Browse" HorizontalAlignment="Left" Margin="364,67,0,0" VerticalAlignment="Top" Width="54" Click="btn_ClientDataSelect_Click"/>
+        <Button x:Name="btn_CygnusJobSelect" Content="Browse" HorizontalAlignment="Left" Margin="364,117,0,0" VerticalAlignment="Top" Width="54" Click="btn_CygnusJobSelect_Click"/>
+        <Button x:Name="btn_WfdDirSelect" Content="Browse" HorizontalAlignment="Left" Margin="364,167,0,0" VerticalAlignment="Top" Width="54" Click="btn_WfdDirSelect_Click"/>
+
+    </Grid>
+</Window>
